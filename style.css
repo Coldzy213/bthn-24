@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbb1bd;
+    position: fixed;
+}
+img{
+    position: absolute;
+    animation: box 3s ease-out 1;
+    top: 20%;
+}
+@keyframes box {
+    0%{
+        top:-10%
+    }
+    10%{
+        top: 20%;
+    }
+    20%{
+        top: -5%;
+    }30%{
+        top: 20%;
+    }
+    40%{
+        top: 5%;
+    }
+    50%{
+        top:20%;
+    }
+    60%{
+        top: 7%;
+    }
+    70%{
+        top: 20%;
+    }80%{
+        top: 10%;
+    }
+    90%{
+        top: 20%;
+    }
+    100%{
+        top:20%;
+    }
+}
+.happy-birthday{
+    z-index: 10;
+    animation-name: hb;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes hb {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 5;
+    }
+}
+.HB-Text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em;
+    color: #c1121f;
+    text-shadow: 0px 0px 8px #c1121f;
+    animation: hb-text 2s linear infinite;
+}
+@keyframes hb-text {
+    0%{
+        text-shadow:  0px 0px 10px#800f2f;
+    }
+    20%{
+        text-shadow:  0px 0px 10px #a4133c;
+    }
+    40%{
+        text-shadow:  0px 0px 10px #c9184a;
+    }
+    60%{
+        text-shadow:  0px 0px 10px #ff758f;
+    }
+    100%{
+        text-shadow: 0px 0px 10px #ff8fa3;
+    }
+}
+.birthday-name{
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color:#c1121f ;
+    text-shadow:  0px 0px 8px #c1121f;
+    animation: name-text 2s linear infinite;
+}
+@keyframes name-text {
+    0%{
+        text-shadow:  0px 0px 10px#800f2f;
+    }
+    20%{
+        text-shadow:  0px 0px 10px #a4133c;
+    }
+    40%{
+        text-shadow:  0px 0px 10px #c9184a;
+    }
+    60%{
+        text-shadow:  0px 0px 10px #ff758f;
+    }
+    100%{
+        text-shadow: 0px 0px 10px #ff8fa3;
+    }
+}
+
+
+.balloon-1, .balloon-2, .balloon-3, .balloon-4, .balloon-5, .balloon-6, .balloon-7, .balloon-8{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+}
+.balloon-1{
+    animation: balloon-1 2s linear infinite;
+    animation-delay: 1.5s;
+}
+.balloon-2{
+    animation: balloon-2 2s linear infinite;
+    animation-delay: 2.3s;
+}
+.balloon-3{
+    animation: balloon-3 2s linear infinite;
+    animation-delay: 3.6s;
+}
+.balloon-4{
+    animation: balloon-4 2s linear infinite;
+    animation-delay: 4.1s;
+}
+.balloon-5{
+    animation: balloon-5 2s linear infinite;
+    animation-delay: 5.2s;
+}
+.balloon-6{
+    animation: balloon-6 2s linear infinite;
+    animation-delay: 6.7s;
+}
+.balloon-7{
+    animation: balloon-7 2s linear infinite;
+    animation-delay: 7.3s;
+}
+.balloon-8{
+    animation: balloon-8 2s linear infinite;
+    animation-delay: 2.3s;
+}
+
+
+.circle{
+    background-color: #a4133c;
+    padding: 40px;
+    border-radius: 80px 80px 80px 50px;
+    transform: rotate(315deg);
+    z-index: 2;
+
+}
+.line{
+    position: absolute;
+    top: 100%;
+    padding: 35px 1px;
+    background-color: #a4133c;
+    border-radius: 10px;
+}
+.trapezoid{
+    z-index: 3;
+    position: absolute;
+    top: 90%;
+    border-bottom: 10px solid #a4133c;
+    padding: 5px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+
+@keyframes balloon-1{
+    0%{
+      top: 100%;
+      left: 5%;
+    }
+    100%{
+        opacity: 5;
+        left: 5%;
+        top: -20%;
+    }
+}
+
+@keyframes balloon-2{
+    0%{
+      left: 20%;
+      top: 100%;
+    }
+    100%{
+        opacity: 5;
+        left: 20%;
+        top: -20%;
+    }
+}
+
+
+@keyframes balloon-3{
+    0%{
+      top: 100%;
+      left: 30%;
+    }
+    100%{
+        opacity: 5;
+        top: -20%;
+        left: 30%;
+    }
+}
+
+@keyframes balloon-4{
+    0%{
+      top: 100%;
+      left: 45%;
+    }
+    100%{
+        opacity: 5;
+        top: -20%;
+        left: 45%;
+    }
+}
+
+@keyframes balloon-5{
+    0%{
+      top: 100%;
+      left: 55%;
+    }
+    100%{
+        opacity: 5;
+        top: -20%;
+        left: 55%;
+    }
+}
+
+@keyframes balloon-6{
+    0%{
+      top: 100%;
+      left: 65%;
+    }
+    100%{
+        opacity: 5;
+        top: -20%;
+        left: 65%;
+    }
+}
+
+@keyframes balloon-7{
+    0%{
+      left: 75%;
+      top: 100%;
+    }
+    100%{
+        opacity: 5;
+        left: 75%;
+        top: -20%;
+    }
+}
+
+@keyframes balloon-8{
+    0%{
+      left: 90%;
+      top: 100%;
+    }
+    100%{
+        opacity: 5;
+        left: 90%;
+        top: -20%;
+       
+    }
+}
+
